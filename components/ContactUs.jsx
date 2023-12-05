@@ -38,7 +38,7 @@ const ContactUs = () => {
                                 <div className="row">
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">First Name</label>
-                                        <input type="text" className="form-control" placeholder="First name" id='first_name' name="first_name" aria-label="First name" required />
+                                        <input type="text" className="form-control" placeholder="First name" id='first_name' name="first_name" aria-label="First name" required="true" />
                                         <ValidationError
                                             prefix="first_name"
                                             field="first_name"
@@ -47,7 +47,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Last Name</label>
-                                        <input type="text" className="form-control" placeholder="Last name" id='last_name' name="last_name" aria-label="Last name" required />
+                                        <input type="text" className="form-control" placeholder="Last name" id='last_name' name="last_name" aria-label="Last name" required="true"/>
                                         <ValidationError
                                             prefix="last_name"
                                             field="last_name"
@@ -56,7 +56,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Email</label>
-                                        <input type="email" className="form-control" placeholder="Email" id='email' name="email" aria-label="First name" required />
+                                        <input type="email" className="form-control" placeholder="Email" id='email' name="email" aria-label="First name" required="true" />
                                         <ValidationError
                                             prefix="email"
                                             field="email"
@@ -65,7 +65,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Contact no</label>
-                                        <input type="number" className="form-control" placeholder="Mobile no" id='contact_no' name="contact_no" aria-label="Last name" required />
+                                        <input type="number" className="form-control" placeholder="Mobile no" id='contact_no' name="contact_no" aria-label="Last name" required="true" />
                                         <ValidationError
                                             prefix="first_name"
                                             field="first_name"
