@@ -76,7 +76,7 @@ const ContactUs = () => {
                                     <div className="col-lg-12 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Message</label>
                                         <div className="form-floating">
-                                            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: 100 }} name="message" defaultValue={""} required />
+                                            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: 100 }} name="message" required="true" />
                                             <label htmlFor="floatingTextarea2">Comments</label>
                                             <ValidationError
                                                 prefix="message"
