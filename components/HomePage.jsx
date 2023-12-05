@@ -24,13 +24,13 @@ const HomePage = () => {
                     <div className="col-lg-12">
                         <nav className="mobile-navbar-nav">
                             <div>
-                                <img src="images/app-store.png" style={{ width: "30px" }} alt="" />
+                                <img src="images/app-store.png" style={{ width: "30px" }} alt="aaa" />
                             </div>
                             <div>
                                 <span className='latest-news'><Link href="/blogs">Latest news</Link></span>
                             </div>
                             <div className="toggle-button" onClick={toggleMenu}>
-                                {menuOpen ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>}
+                                {menuOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
                             </div>
 
                             <ul className={`menu ${menuOpen ? 'open' : ''}`}>
@@ -71,7 +71,7 @@ const HomePage = () => {
                     <div className="col-lg-4">
                         <div className="profile-container">
                             <div className="background-pattern" />
-                            <img className="hero-img" src="/images/Untitled design.png" alt />
+                            <img className="hero-img" src="/images/Untitled design.png" alt="aaa" />
                         </div>
                     </div>
                 </div>

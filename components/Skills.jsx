@@ -8,11 +8,11 @@ const Skills = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="web-design mb-4">
-                            <img src="/images/coding.png" alt />
+                            <img src="/images/coding.png" alt="aa" />
                             <h3>Website development</h3>
                         </div>
                         <div className="web-design ">
-                            <img src="/images/app-development.png" alt />
+                            <img src="/images/app-development.png" alt="aaa" />
                             <h3>Website designing</h3>
                         </div>
                     </div>

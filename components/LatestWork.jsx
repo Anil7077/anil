@@ -9,17 +9,17 @@ const LatestWork = () => {
                 <div className="row">
                     <div className="col-lg-6 mb-3">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img className="latest-work-img" src="/images/wnrl2.webp" alt />
+                            <img className="latest-work-img" src="/images/wnrl2.webp" alt="aa" />
                         </div>
                     </div>
                     <div className="col-lg-6 mb-3">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <img className="latest-work-img" src="/images/dotcom1.jpg" alt />
+                            <img className="latest-work-img" src="/images/dotcom1.jpg" alt="aa" />
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                            <img className="latest-work-img" src="/images/slider2.webp" alt />
+                            <img className="latest-work-img" src="/images/slider2.webp" alt="aa" />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const LatestWork = () => {
                                             <a href="https://wnrl.vercel.app/" target="_blank" rel="noopener noreferrer">Website link</a>
                                     </div>
                                     <div className="col-lg-6">
-                                        <img src="/images/wnrl1.jpeg" alt />
+                                        <img src="/images/wnrl1.jpeg" alt="aa" />
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const LatestWork = () => {
                                         <a href='https://github.com/Anil7077/DotCom' target="_blank" rel="noopener noreferrer">GitHub Link</a>
                                     </div>
                                     <div className="col-lg-6">
-                                        <img src="/images/dotcom2.jpg" alt />
+                                        <img src="/images/dotcom2.jpg" alt="aa" />
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const LatestWork = () => {
                                         <a href='https://github.com/Anil7077/Refab' target="_blank" rel="noopener noreferrer">GitHub Link</a>
                                     </div>
                                     <div className="col-lg-6">
-                                        <img src="/images/slider3.webp" alt />
+                                        <img src="/images/slider3.webp" alt="aaa" />
                                     </div>
                                 </div>
                             </div>

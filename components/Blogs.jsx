@@ -12,7 +12,7 @@ const Blogs = () => {
                     <div className="row">
                         <div className="col-lg-6 d-flex justify-content-md-start justify-content-sm-center align-items-center mb-4">
                             <div className='latest-technology-img'>
-                                <img src="images/5g.jpg" alt="" />
+                                <img src="images/5g.jpg" alt="aaa" />
                             </div>
                         </div>
                         <div className="col-lg-6 d-flex justify-content-center align-items-center mb-4">
@@ -35,14 +35,14 @@ const Blogs = () => {
                         </div>
                         <div className="col-lg-6 d-flex justify-content-center align-items-center mb-4">
                             <div className='latest-technology-img'>
-                                <img src="images/ai.jpg" alt="" />
+                                <img src="images/ai.jpg" alt="aaaa" />
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 d-flex justify-content-center align-items-start mb-4">
                             <div className='latest-technology-img'>
-                                <img src="images/swarm.jpg" alt="" />
+                                <img src="images/swarm.jpg" alt="aaa" />
                             </div>
                         </div>
                         <div className="col-lg-6 d-flex justify-content-center align-items-center mb-4">
