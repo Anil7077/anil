@@ -24,17 +24,32 @@ export default function Home() {
               <NavBar />
             </div>
             <div className="col-lg-9 col-sm-12">
-            <HomePage />
+              <HomePage />
               <LatestWork />
               <Skills />
               <ContactUs />
-              
             </div>
           </div>
         </div>
       </section>
-
-
     </>
   )
 }
+
+
+
+{/* <section className="mt-2">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-3 navigation-sidebar fixed-top ">
+        <NavBar />
+      </div>
+      <div className="col-lg-9 col-sm-12 offset-sm-3 ">
+        <HomePage />
+        <LatestWork />
+        <Skills />
+        <ContactUs />
+      </div>
+    </div>
+  </div>
+</section> */}

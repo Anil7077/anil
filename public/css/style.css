@@ -37,8 +37,37 @@ body {
     background-color: white;
     padding: 27px;
     border-radius: 45px;
+    position: relative;
+    overflow: hidden;
 }
-
+.shape{
+    position: absolute;
+    top: -18px;
+    right: -5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #3368e8;
+    outline: 1px dashed #3368e8;
+    padding: 10px;
+    outline-offset: 6px;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-name: rotating_invers;
+}
+@keyframes rotating_invers {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
 .mobile-navbar {
     background-color: white;
     padding: 5px 15px 5px 24px;
@@ -94,6 +123,8 @@ h2 {
     background-color: white;
     border-radius: 45px;
     margin-top: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .my-work .latest-work-img {
@@ -112,6 +143,8 @@ h2 {
     background-color: white;
     border-radius: 45px;
     margin-top: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .my-skills .web-design {
@@ -141,6 +174,8 @@ h2 {
     padding: 27px;
     margin-top: 50px;
     border-radius: 45px;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-me-box {
@@ -440,3 +475,4 @@ a {
     border: 1px solid rgb(212, 212, 212);
     padding: 8px;
 }
+

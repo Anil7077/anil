@@ -37,6 +37,7 @@ const Skills = () => {
                         <button style={{ backgroundColor: '#0866ff', color: 'aliceblue' }}>MySQL</button>
                     </div>
                 </div>
+                <div className='shape'></div>
             </section>
 
         </>

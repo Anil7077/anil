@@ -17,6 +17,16 @@ const HomePage = () => {
         link.download = 'resume.pdf';
         link.click();
     };
+    const [bursting, setBursting] = useState(false);
+
+    const handleButtonClick = () => {
+        setBursting(true);
+
+        // Reset the bursting state after a delay (you can adjust the delay as needed)
+        setTimeout(() => {
+            setBursting(false);
+        }, 2000); // 2000 milliseconds (2 seconds) in this example
+    };
     return (
         <>
             <section className='mobile-navbar sticky-top'>
@@ -54,6 +64,7 @@ const HomePage = () => {
                         <div className="small-black-line" />
                         <p>A passionate front-end developer who has eager to work in new technologies and always
                             tries to deliver in time...</p>
+
                         <h6>Connect with me</h6>
                         <div className="social-icons">
                             <a href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">
@@ -67,6 +78,7 @@ const HomePage = () => {
                             </a>
                         </div>
                         <button onClick={downloadResume} style={{ marginBottom: "10px" }}>Download Resume</button>
+                        
                     </div>
                     <div className="col-lg-4">
                         <div className="profile-container">
@@ -75,6 +87,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                <div className='shape'></div>
             </section>
 
         </>

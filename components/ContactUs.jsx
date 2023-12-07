@@ -98,6 +98,7 @@ const ContactUs = () => {
                             </form>
                         </div>
                     </div>
+                    <div className='shape'></div>
                 </section>
                 <section className="footer">
                     <div className="footer-data">

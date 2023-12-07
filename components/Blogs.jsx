@@ -77,6 +77,7 @@ const Blogs = () => {
                     </div>
 
                 </div>
+                <div className='shape'></div>
             </section>
         </>
     )
