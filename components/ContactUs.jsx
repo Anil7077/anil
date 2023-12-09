@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
-const ContactUs = () => {
+const ContactUs = ({darkMode}) => {
     const [state, handleSubmit] = useForm("mqkvvjqr");
     const [showPara, setShowPara] = useState()
     useEffect(() => {
@@ -13,7 +13,7 @@ const ContactUs = () => {
     return (
         <>
             <div>
-                <section className="contact-me" id="contact-me">
+                <section className={darkMode ? "contact-me sections" : "contact-me"} id="contact-me">
                     <h2 className="mb-4">Contact with me</h2>
                     <div className="row">
                         <div className="col-lg-4">
@@ -100,17 +100,17 @@ const ContactUs = () => {
                     </div>
                     <div className='shape'></div>
                 </section>
-                <section className="footer">
+                <section className={darkMode ? "footer sections" : "footer"}>
                     <div className="footer-data">
                         <div>
                             <h6>©copyright by Anil Mallick</h6>
                         </div>
                         <div className='social-footer-links'>
-                            <a href="https://www.linkedin.com/in/anil-mallick-642a89259" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a style={{color: darkMode && "white"}} href="https://www.linkedin.com/in/anil-mallick-642a89259" target="_blank" rel="noopener noreferrer">Instagram</a>
                             <span>|</span>
-                            <a href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a style={{color: darkMode && "white"}} href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">Facebook</a>
                             <span>|</span>
-                            <a href="#">Linkedin</a>
+                            <a style={{color: darkMode && "white"}} href="#">Linkedin</a>
                         </div>
                     </div>
                 </section>
