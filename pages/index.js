@@ -12,7 +12,7 @@ import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 navigation-sidebar">
-              <NavBar/>
+              <NavBar darkMode={darkMode}/>
             </div>
             <div className="col-lg-9 col-sm-12">
               <HomePage darkMode={darkMode} setDarkMode={setDarkMode} />

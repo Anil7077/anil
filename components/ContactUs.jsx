@@ -5,6 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 const ContactUs = ({darkMode}) => {
     const [state, handleSubmit] = useForm("mqkvvjqr");
     const [showPara, setShowPara] = useState()
+    const [showErrorMsg, setShowErrorMsg] = useState(null)
     useEffect(() => {
         if (state.succeeded) {
             setShowPara("Form submitted successfully, I will get back to you shortly.");
@@ -46,6 +47,7 @@ const ContactUs = ({darkMode}) => {
                                             errors={state.errors}
                                         />
                                     </div>
+                                    
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Last Name</label>
                                         <input type="text" className="form-control" placeholder="Last name" id='last_name' name="last_name" aria-label="Last name" required={true}/>
