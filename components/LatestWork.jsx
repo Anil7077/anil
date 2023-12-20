@@ -10,16 +10,19 @@ const LatestWork = ({darkMode}) => {
                     <div className="col-lg-6 mb-3">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img className="latest-work-img" src="/images/wnrl2.webp" alt="aa" />
+                            <h3>WNRL</h3>
                         </div>
                     </div>
                     <div className="col-lg-6 mb-3">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <img className="latest-work-img" src="/images/dotcom1.jpg" alt="aa" />
+                            <h3>DOTCOM</h3>
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div type="button" className="btn work-image-div" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                             <img className="latest-work-img" src="/images/slider2.webp" alt="aa" />
+                            <h3>REFAB</h3>
                         </div>
                     </div>
                 </div>
@@ -30,7 +33,7 @@ const LatestWork = ({darkMode}) => {
                         <div className="modal-content">
                             <div className={darkMode ? "modal-header bg-dark" : "modal-header bg-white"}>
                                 <h5 className="modal-title" id="exampleModalLabel">WNRL</h5>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                                <button type="button" className="btn-close" style={{backgroundColor: "red", opacity: "unset"}} data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className={darkMode ? "modal-body modal-inner-part bg-dark" : "modal-body modal-inner-part"}>
                                 <div className="row">
@@ -66,7 +69,7 @@ const LatestWork = ({darkMode}) => {
                         <div className="modal-content">
                             <div className={darkMode ? "modal-header bg-dark" : "modal-header bg-white"}>
                                 <h5 className="modal-title" id="exampleModalLabel">DOTCOM</h5>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                                <button type="button" className="btn-close" style={{backgroundColor: "red", opacity: "unset"}} data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className={darkMode ? "modal-body modal-inner-part bg-dark" : "modal-body modal-inner-part"}>
                                 <div className="row">
@@ -92,7 +95,7 @@ const LatestWork = ({darkMode}) => {
                         <div className="modal-content">
                             <div className={darkMode ? "modal-header bg-dark" : "modal-header bg-white"}>
                                 <h5 className="modal-title" id="exampleModalLabel">REFAB</h5>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                                <button type="button" className="btn-close" style={{backgroundColor: "red", opacity: "unset"}} data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className={darkMode ? "modal-body modal-inner-part bg-dark" : "modal-body modal-inner-part"}>
                                 <div className="row">
