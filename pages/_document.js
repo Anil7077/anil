@@ -15,6 +15,7 @@ export default function Document() {
           crossOrigin="anonymous"
           async
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="/css/style.css"></link>
       </Head>

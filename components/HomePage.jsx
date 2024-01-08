@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
 
 const HomePage = ({ darkMode, setDarkMode }) => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [textColor, setTextColor] = useState('deeppink');
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -36,9 +38,9 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                             </div>
                             <div>
                                 {darkMode ?
-                                <Image onClick={handleDarkMode} src="/images/brightness (1).png" width={20} height={20} alt="aa" />
-                                : 
-                                <Image onClick={handleDarkMode} src="/images/darkness.png" width={20} height={20} alt="aa" />
+                                    <Image onClick={handleDarkMode} src="/images/brightness (1).png" width={20} height={20} alt="aa" />
+                                    :
+                                    <Image onClick={handleDarkMode} src="/images/darkness.png" width={20} height={20} alt="aa" />
                                 }
                             </div>
                             <div className="toggle-button" onClick={toggleMenu}>
@@ -65,7 +67,31 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                 <div className="row">
                     <div className="col-lg-8">
                         <h2>Anil Mallick</h2>
-                        <span>Front-end Developer</span>
+                        {/* <span>I am a <span>Front-end Developer</span></span> */}
+                        
+                        <div
+                            style={{
+                                fontSize: '20px',
+                                color: textColor,
+                                fontWeight: '600'
+                            }}
+                        > <span style={{color: darkMode ? "white" : "black"}}>I am </span>
+                            <TypeAnimation
+                                sequence={[
+                                    () => setTextColor('deeppink'),
+                                    ' an Engineer..', 800,
+                                    () => setTextColor('#808000'),
+                                    ' a Web developer..',
+                                    800,
+                                    () => setTextColor('#8E44AD'),
+                                    ' a Web designer..',
+                                    1000,
+                                    () => setTextColor('#005841'),
+                                    ' a Coder..',
+                                ]}
+                                repeat={Infinity}
+                            />
+                        </div>
                         <div className="small-black-line" />
                         <p>A passionate front-end developer who has eager to work in new technologies and always
                             tries to deliver in time...</p>
@@ -88,7 +114,8 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                     <div className="col-lg-4">
                         <div className="profile-container">
                             <div className="background-pattern" />
-                            <img className="hero-img" src="/images/Untitled design.png" style={{border: darkMode && "2px solid #414141"}} alt="aaa" />
+                            <img className="hero-img" src="/images/Untitled design.png" style={{ border: darkMode && "2px solid #414141" }} alt="aaa" />
+                            {/* <ImageSlider /> */}
                         </div>
                     </div>
                 </div>
