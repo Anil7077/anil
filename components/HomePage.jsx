@@ -93,8 +93,8 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                             />
                         </div>
                         <div className="small-black-line" />
-                        <p>A passionate front-end developer who has eager to work in new technologies and always
-                            tries to deliver in time...</p>
+                        <p>A passionate front-end developer who is eager to work in new technologies and always
+                            try to deliver in time...</p>
 
                         <h6>Connect with me</h6>
                         <div className="social-icons">
