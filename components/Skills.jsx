@@ -24,9 +24,11 @@ const Skills = ({darkMode}) => {
                         <button style={{ backgroundColor: '#dd4b25', color: 'rgb(0, 0, 0)' }}>HTML5</button>
                         <button style={{ backgroundColor: '#254bdd', color: 'aliceblue' }}>CSS3</button>
                         <button style={{ backgroundColor: '#8210f5', color: 'rgb(255, 255, 255)' }}>BOOTSTRAP5</button>
+                        <button style={{ backgroundImage: 'linear-gradient(to right, rgb(120, 19, 215), rgb(0 132 100), rgb(49, 181, 243))', color: '#fff' }}>NextAuth</button>
                         <button style={{ backgroundColor: '#e84e31', color: 'rgb(255, 255, 255)' }}>Git</button>
                         <button style={{ backgroundColor: darkMode ? "grey" : '#000000', color: 'rgb(255, 255, 255)' }}>GitHub</button>
                         <button style={{ backgroundColor: '#764abc', color: 'aliceblue' }}>Redux Toolkit</button>
+                        <button style={{ backgroundColor: 'rgb(255 183 0)', color: 'black' }}>Zustand</button>
                         <button style={{ backgroundColor: '#3b7cef', color: 'rgb(255, 255, 255)' }}>Material
                             UI</button>
                         <button style={{ backgroundColor: '#f77377', color: 'rgb(255, 255, 255)' }}>Chart js</button>
@@ -36,6 +38,7 @@ const Skills = ({darkMode}) => {
                         <button style={{ backgroundColor: '#507e9c', color: 'aliceblue' }}>Java</button>
                         <button style={{ backgroundColor: '#0866ff', color: 'aliceblue' }}>MySQL</button>
                     </div>
+                    
                 </div>
                 <div className='shape'></div>
             </section>
