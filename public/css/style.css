@@ -178,4 +178,10 @@ a {
 .latest-technology-img img{ width: 100%;}
 .latest-technology-img{ border: 1px solid rgb(212, 212, 212); padding: 8px;}
 .dark-mode-box{ background-color: black !important; color: white !important;}
+.navigation-box i{ color: #54b350; font-size: 17px;}
+.navigation-box p{margin: 6px;}
+  /* ScrollToTopButton.css */
+.scroll-to-top-button { position: fixed; bottom: 60px; right: 20px; display: none; background-image: linear-gradient(to bottom right, rgb(50 105 231 / 70%), rgb(0 255 23 / 60%)); border: none; border-radius: 5px; padding: 9px 14px; cursor: pointer; z-index: 999; opacity: 5;}
+.scroll-to-top-button:hover{ background-image: linear-gradient(to bottom right, rgb(50 105 231 / 50%), rgb(112 235 123 / 90%));}
+.scroll-to-top-button.visible { display: block;}
 

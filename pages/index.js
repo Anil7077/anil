@@ -22,7 +22,7 @@ export default function Home() {
       <section className={darkMode ? "main-body-section-dark pt-2" : "main-body-section-light pt-2"}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 navigation-sidebar">
+            <div className="col-lg-3 navigation-sidebar sticky-top">
               <NavBar darkMode={darkMode}/>
             </div>
             <div className="col-lg-9 col-sm-12">
