@@ -4,7 +4,7 @@ import React from 'react'
 const NavBar = ({darkMode}) => {
   return (
     <>
-      <div className={darkMode ? "navigation-box dark-mode-box" : "navigation-box"}>
+      <div className={darkMode ? "navigation-box dark-mode-box sticky-top" : "navigation-box sticky-top"}>
         <ul>
           <li><a href="#home" style={{color : darkMode ? "white" : "black"}}>Home</a></li>
           <div className="small-black-line" style={{backgroundColor : darkMode ? "white" : "black"}}/>
