@@ -15,6 +15,8 @@ const NavBar = ({ darkMode }) => {
             <div className="small-black-line" style={{ backgroundColor: darkMode ? "white" : "black" }} />
             <li><a href="#my-skills" style={{ color: darkMode ? "white" : "black" }}>My Skills</a></li>
             <div className="small-black-line" style={{ backgroundColor: darkMode ? "white" : "black" }} />
+            <li><a href="#my-education" style={{ color: darkMode ? "white" : "black" }}>Education</a></li>
+            <div className="small-black-line" style={{ backgroundColor: darkMode ? "white" : "black" }} />
             <li><Link href="/blogs" style={{ color: darkMode ? "white" : "black" }}>Latest News</Link></li>
             <div className="small-black-line" style={{ backgroundColor: darkMode ? "white" : "black" }} />
             <li><a href="#contact-me" style={{ color: darkMode ? "white" : "black" }}>Contact me</a></li>

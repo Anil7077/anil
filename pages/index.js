@@ -8,6 +8,7 @@ import Skills from '@/components/Skills'
 import ContactUs from '@/components/ContactUs'
 import NavBar from '@/components/NavBar'
 import { useState } from 'react'
+import Education from '@/components/Education'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,6 @@ export default function Home() {
     <>
       <Head>
         <title>Anil Mallick</title>
-
       </Head>
       <section className={darkMode ? "main-body-section-dark pt-2" : "main-body-section-light pt-2"}>
         <div className="container">
@@ -29,6 +29,7 @@ export default function Home() {
               <HomePage darkMode={darkMode} setDarkMode={setDarkMode} />
               <LatestWork darkMode={darkMode} setDarkMode={setDarkMode} />
               <Skills darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Education darkMode={darkMode} setDarkMode={setDarkMode}/>
               <ContactUs darkMode={darkMode} setDarkMode={setDarkMode} />
             </div>
           </div>

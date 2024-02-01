@@ -55,6 +55,7 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                                 <li onClick={closeMenu}><a href="#about">About</a></li>
                                 <li onClick={closeMenu}><a href="#latest-work">Latest Work</a></li>
                                 <li onClick={closeMenu}><a href="#my-skills">My Skills</a></li>
+                                <li onClick={closeMenu}><a href="#my-education">Education</a></li>
                                 <li onClick={closeMenu}><Link href="/blogs">Latest News</Link></li>
                                 <li onClick={closeMenu}><a href="#contact-me">Contact me</a></li>
                                 {/* Add more menu items as needed */}
