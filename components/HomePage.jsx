@@ -31,7 +31,9 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                     <div className="col-lg-12">
                         <nav className="mobile-navbar-nav">
                             <div>
-                                <img src="images/app-store.png" style={{ width: "30px" }} alt="aaa" />
+                                <Link href="/">
+                                    <img src="images/app-store.png" style={{ width: "30px" }} alt="aaa" />
+                                </Link>
                             </div>
                             <div>
                                 <span className='latest-news'><Link href="/blogs">Latest news</Link></span>
@@ -67,16 +69,18 @@ const HomePage = ({ darkMode, setDarkMode }) => {
             <section className={darkMode ? "hero-section sections" : "hero-section"} id="home">
                 <div className="row">
                     <div className="col-lg-8">
-                        <h2>Anil Mallick</h2>
-                        {/* <span>I am a <span>Front-end Developer</span></span> */}
-                        
+                        {/* <h2>Anil Mallick</h2> */}
+                        <div class="loader">
+                            <span>Anil Mallick</span>
+                            <span>Anil Mallick</span>
+                        </div>
                         <div
                             style={{
                                 fontSize: '20px',
                                 color: textColor,
                                 fontWeight: '600'
                             }}
-                        > <span style={{color: darkMode ? "white" : "black"}}>I am </span>
+                        > <span style={{ color: darkMode ? "white" : "black" }}>I am </span>
                             <TypeAnimation
                                 sequence={[
                                     () => setTextColor('deeppink'),
@@ -98,6 +102,7 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                             try to deliver in time...</p>
 
                         <h6>Connect with me</h6>
+
                         <div className="social-icons">
                             <a href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-facebook-square" style={{ color: '#0866ff' }} />
@@ -122,7 +127,6 @@ const HomePage = ({ darkMode, setDarkMode }) => {
                 </div>
                 <div className='shape'></div>
             </section>
-
         </>
     )
 }

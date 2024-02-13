@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { useForm, ValidationError } from '@formspree/react';
 
-const ContactUs = ({darkMode}) => {
+const ContactUs = ({ darkMode }) => {
     const [state, handleSubmit] = useForm("mqkvvjqr");
     const [showPara, setShowPara] = useState()
     const [showErrorMsg, setShowErrorMsg] = useState(null)
@@ -10,6 +10,7 @@ const ContactUs = ({darkMode}) => {
         if (state.succeeded) {
             setShowPara("Form submitted successfully, I will get back to you shortly.");
         }
+
     }, [state.succeeded]);
     return (
         <>
@@ -25,12 +26,14 @@ const ContactUs = ({darkMode}) => {
                         </div>
                         <div className="col-lg-4">
                             <div className="contact-me-box mb-2">
+                            <span> </span>
                                 <i className="fas fa-envelope" />
                                 <span style={{ wordBreak: "break-all" }}>anil.mallick2002@gmail.com</span>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="contact-me-box mb-2">
+                            <span> </span>
                                 <i className="fas fa-phone fa-rotate-90" />
                                 <span>7077825321</span>
                             </div>
@@ -47,10 +50,10 @@ const ContactUs = ({darkMode}) => {
                                             errors={state.errors}
                                         />
                                     </div>
-                                    
+
                                     <div className="col-lg-6 mb-3">
                                         <label htmlFor="formGroupExampleInput" className="form-label">Last Name</label>
-                                        <input type="text" className="form-control" placeholder="Last name" id='last_name' name="last_name" aria-label="Last name" required={true}/>
+                                        <input type="text" className="form-control" placeholder="Last name" id='last_name' name="last_name" aria-label="Last name" required={true} />
                                         <ValidationError
                                             prefix="last_name"
                                             field="last_name"
@@ -108,11 +111,11 @@ const ContactUs = ({darkMode}) => {
                             <h6>©copyright by Anil Mallick</h6>
                         </div>
                         <div className='social-footer-links'>
-                            <a style={{color: darkMode && "white"}} href="https://www.linkedin.com/in/anil-mallick-642a89259" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            <a style={{ color: darkMode && "white" }} href="https://www.linkedin.com/in/anil-mallick-642a89259" target="_blank" rel="noopener noreferrer">Instagram</a>
                             <span>|</span>
-                            <a style={{color: darkMode && "white"}} href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a style={{ color: darkMode && "white" }} href="https://www.facebook.com/anil.mallick.39501" target="_blank" rel="noopener noreferrer">Facebook</a>
                             <span>|</span>
-                            <a style={{color: darkMode && "white"}} href="#">Linkedin</a>
+                            <a style={{ color: darkMode && "white" }} href="#">Linkedin</a>
                         </div>
                     </div>
                 </section>
